@@ -1,0 +1,87 @@
+<form role="form" id="vehicleSearchBody">
+{{#scopes.isHomePage}}
+    <div class="page-wrap-absolute">
+      <div id="vehicle_search_form">
+      	<div class="vehicle-search-header">
+            <p>Get the car accessories that fit your model</p>
+        </div>
+        <div class="vehicle-search-body">
+        	<!-- Make -->
+        	<div class="dropdown-container">
+	            <select class="dropdown custom" name="make" id="make">
+              	  <option value="hide">Choose Make</option>
+	              {{#scopes.vehicleMakeList}}
+	              <option value="{{value}}" data-label="{{label}}"{{#selected}} selected{{/selected}}>{{label}}</option>
+	              {{/scopes.vehicleMakeList}}
+	            </select>
+	        </div>
+	        
+	        <!-- Model -->
+	        <div class="dropdown-container">
+	            <select class="dropdown custom" name="model" id="model" disabled>
+              	  <option value="hide">Choose Model</option>
+	              {{#scopes.models}}
+	              <option value="{{value}}" data-label="{{label}}"{{#selected}} selected{{/selected}}>{{label}}</option>
+	              {{/scopes.models}}
+	            </select>
+	        </div>
+	        
+	       <!--  Body Type -->
+	       <div class="dropdown-container">
+	             <select class="dropdown custom" name="bodyType" id="bodyType" disabled>
+              	  <option value="hide">Choose Body Type</option>
+	              {{#scopes.bodyTypes}}
+	              <option value="{{value}}" data-label="{{label}}"{{#selected}} selected{{/selected}}>{{label}}</option>
+	              {{/scopes.bodyTypes}}
+	            </select>
+	        </div>
+	        
+	        <!-- Series -->
+	        <div class="dropdown-container">
+	             <select class="dropdown custom" name="series" id="series" disabled>
+              	  <option value="hide">Choose Series</option>
+	              {{#scopes.series}}
+	              <option value="{{value}}" data-label="{{label}}"{{#selected}} selected{{/selected}}>{{label}}</option>
+	              {{/scopes.series}}
+	            </select>
+	        </div>
+	        <button type="button" name="vehicleSearch" id="vehicleSearch" class="vehicle-search-btn search-btn">SHOW ME RELEVANT PRODUCTS</button>
+	    </div>
+      </div>
+    </div>
+{{/scopes.isHomePage}}
+{{^scopes.isHomePage}}
+	  <div id="landing_vehicle_search">
+	      <img src="/ttsvr/cropImage/fitmycar.images.fmc_img_logo_grey.png">
+	      <p>
+	       <select class="dropdown" name="make" id="make" onchange="VehicleSearch.changeModel(this);">
+	         <option value="">Make</option>
+	         {{#scopes.vehicleMakeList}}
+	         <option value="{{value}}">{{label}}</option>
+	         {{/scopes.vehicleMakeList}}
+	       </select>
+	   </p>
+	   <p>
+	      <select class="dropdown" name="model" id="model" onchange="VehicleSearch.changeBodyType(this);">
+	         <option value="">Model</option>
+	       </select>
+	   </p>
+	   <p>
+	       <select class="dropdown" name="bodyType" id="bodyType" onchange="VehicleSearch.changeSeries(this);">
+	         <option value="">Body Type</option>
+	       </select>
+	   </p>
+	   <p>
+        </p>
+	   <p>
+	       <select class="dropdown" name="series" id="series">
+	         <option value="">Series</option>
+	       </select>
+	   </p>
+	   <p>
+	     <button type="button" name="vehicleSearch" id="vehicleSearch" class="vehicle-search-btn search-btn">Search</button>
+	   </p>
+	      <h6 style="display:none;">Lorem ipsum dolor sit amet, con sectetur adipsiscing elit.</h6>
+	  </div>
+{{/scopes.isHomePage}}
+</form>
