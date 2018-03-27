@@ -48,14 +48,15 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 
 /* Box sizing */
 *, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     }
   
 /* Font Smoothing */
 html {
     height: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
     font-variant-ligatures: none;
     -webkit-font-variant-ligatures: none;
     -webkit-font-smoothing: antialiased;
@@ -70,13 +71,13 @@ body {
     background: #fff;
     color: #222;
     line-height: 1.4;
-    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'abrahamregular', Arial, sans-serif; }
 
 p, a, span { 
-    font-family: 'Roboto', Arial, sans-serif; 
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
     font-size: 15px; 
 }
 
@@ -93,9 +94,9 @@ p, a, span {
 .pos-abs {position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
 
 /* Remove styles */
-.no-pad { padding: 0; }
-.no-marg { margin: 0; }
-.no-br { border: none; }
+.no-pad { padding: 0 !important; }
+.no-marg { margin: 0 !important; }
+.no-br { border: none !important; }
 
 /* Set common width sizes */
 .w-100 { width: 100%;}
@@ -183,7 +184,7 @@ p, a, span {
 /* Set background colors */
 .bg-white { background: #fff; }
 .bg-light { background: #F4F4F4; }
-.bg-gray { background: #555; }
+.bg-gray { background: #999; }
 .bg-dark-black { background: #222; }
 .bg-black { background: #000; }
 .bg-light-blue { background: #4a8cde; }

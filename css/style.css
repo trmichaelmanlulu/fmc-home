@@ -273,8 +273,31 @@ a.cant-find-vehicle:hover {
 
 .feefo-section {
     height: 200px;
+    background: #ffff43;
 }
 
+
+/* ********************************* */
+/*  Find Fit Section
+/* ********************************* */
+
+.find-fit-container {
+    display: flex;
+    justify-content: space-between;
+}
+.find-fit-items {
+    width: 32%;
+}
+.find-fit-details {
+    width: 80%;
+}
+.find-fit-details h4 {
+    font-size: 23px;
+    margin-bottom: 0;
+}
+.find-fit-details p {
+    font-size: 17px;
+}
 
 /* ********************************* */
 /*  Confidence Builder Section
@@ -292,22 +315,78 @@ a.cant-find-vehicle:hover {
     display: block;
     border-top: 2px solid #BDBDBD;
     width: 100%;
-    top: 34px;
+    top: 35px;
     z-index: -1;
 }
 .confidence-builder-container {
     display: flex;
     justify-content: space-between;
 }
-.confidence-builder-items {
-    width: 30%;
+.confidence-builder-items img {
+    position: relative;
+    display: block;
+    float: left;
+    width: 40%;
+}
+.confidence-builder-details {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%;
+    padding: 0 10px;
+}
+.confidence-builder-details p {
+    font-size: 16px;
+    color: #A9A9A9;
+    margin: 0;
 }
 
 
+/* ********************************* */
+/*  Stay fitted section
+/* ********************************* */
 
+.stay-fitted-section {
+    background: rgb(212, 212, 212);
+    padding: 30px 0;
+}
+.stay-fitted-container h4 {
+    font-size: 24px;
+}
+.email-container {
+    display: flex;
+    justify-content: space-between;
+}
+.email-container input {
+    font-size: 18px;
+    width: 55%;
+    min-height: 50px;
+    border-radius: 0 !important;
+    outline: none;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.stay-fitted-get-updates {
+    border-radius: 0px !important;
+    background: #296acc;
+    width: 40%;
+    min-height: 50px;
+    font-size: 18px;
+}
+.stay-fitted-get-updates:hover {
+    color: #fff;
+    background: #235baf;
+}
 
-
-
+/* ********************************* */
+/*  Footer
+/* ********************************* */
+footer {
+    height: 500px;
+}
 
 /* ********************************* */
 /*  Media Queries
