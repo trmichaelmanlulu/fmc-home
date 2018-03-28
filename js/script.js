@@ -1,17 +1,16 @@
 $(function() { // On ready
 
-    /* Multi Item Carousel */
-    $('.shop-gear_carousel').slick({
-    centerMode: true,
+    /* Shop Gear carousel */
+    $('.sg_carousel').slick({
     slidesToShow: 3,
     centerPadding: '320px',
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     responsive: [
         {
         breakpoint: 1700,
         settings: {
-                arrows: true,
+                arrows: false,
                 centerMode: true,
                 centerPadding: '230px',
                 slidesToShow: 3
@@ -20,26 +19,16 @@ $(function() { // On ready
         {
         breakpoint: 1350,
         settings: {
-                arrows: true,
+                arrows: false,
                 centerMode: true,
                 centerPadding: '180px',
                 slidesToShow: 3
             }
         },
         {
-        breakpoint: 1200,
-        settings: {
-                arrows: true,
-                centerMode: true,
-                centerPadding: '50px',
-                slidesToShow: 3
-            }
-        },
-        {
         breakpoint: 992,
             settings: {
-                arrows: true,
-                centerMode: true,
+                arrows: false,
                 centerPadding: '0px',
                 slidesToShow: 2
             }
@@ -47,13 +36,20 @@ $(function() { // On ready
         {
         breakpoint: 768,
             settings: {
-                arrows: true,
-                centerMode: true,
+                arrows: false,
                 centerPadding: '0px',
                 slidesToShow: 1
             }
         }
     ]
+    });
+
+    /* Carousel buttons */
+    $('.sg_carousel-prev').on('click', function() {
+        $('.sg_carousel').slick('slickPrev');
+    });
+    $('.sg_carousel-next').on('click', function() {
+        $('.sg_carousel').slick('slickNext');
     });
 
 });
