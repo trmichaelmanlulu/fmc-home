@@ -73,6 +73,12 @@ a.cant-find-vehicle:hover {
 .sg_carousel {
     padding: 0 70px;
 }
+/*
+.sg_carousel-image-container {
+    min-height: 244px;
+    background: linear-gradient(#fff, #e0e0e0);
+}
+*/
 .sg_carousel-title {
     font-size: 20px;
 }
@@ -85,7 +91,7 @@ a.cant-find-vehicle:hover {
 .sg_carousel-link:active {
     outline: none;
     color: #222;
-    text-decoration: none;
+    text-decoration: nonxe;
 }
 .sg_carousel-link:hover {
     outline: none;
@@ -135,9 +141,13 @@ a.cant-find-vehicle:hover {
 }
 .sba_gallery.row-1 .sba_gallery-items {
     width: 49.5%;
+    min-height: 374px;
+    background: linear-gradient(#fff, #e0e0e0);
 }
 .sba_gallery.row-2 .sba_gallery-items {
     width: 32.5%;
+    min-height: 246px;
+    background: linear-gradient(#fff, #e0e0e0);
 }
 .sba_gallery-items p {
     font-size: 20px;
@@ -154,6 +164,10 @@ a.cant-find-vehicle:hover {
 }
 
 /* AU manufacturer */
+.sba_au-manufacturer {
+    min-height: 450px;
+    background: linear-gradient(#fff, #e0e0e0);
+}
 .am_details-info {
     font-size: 17px;
     width: 70%;
@@ -178,6 +192,8 @@ a.cant-find-vehicle:hover {
 .sba_au_container {
     width: 49%;
     align-self: center;
+    min-height: 370px;
+    background: linear-gradient(#808080, #353535);
 }
 .sba_au_detais {
     width: 60%;
@@ -217,6 +233,7 @@ a.cant-find-vehicle:hover {
     transform: translateX(-50%);
     width: 50%;
     margin-bottom: 20px;
+    min-height: 147px;
 }
 .feature-item p {
     text-align: center;
@@ -252,6 +269,8 @@ a.cant-find-vehicle:hover {
 }
 .community_banner {
     margin-bottom: 150px;
+    min-height: 450px;
+    background: linear-gradient(#fff, #e0e0e0);
 }
 .community_more {
     color: #aaa;
@@ -319,6 +338,8 @@ a.cant-find-vehicle:hover {
 }
 .ff_items {
     width: 32%;
+    min-height: 231px;
+    background: linear-gradient(#808080, #353535);
 }
 .ff_details {
     width: 80%;
@@ -476,6 +497,22 @@ footer {
     .feature-item {
         min-height: 215px;
     }
+    .sba_gallery.row-1 .sba_gallery-items {
+        min-height: 310px;
+    }
+    .sba_gallery.row-2 .sba_gallery-items {
+        min-height: 203px;
+    }
+    .sba_au-manufacturer,
+    .community_banner {
+        min-height: 373px;
+    }
+    .sba_au_container {
+        min-height: 307px;
+    }
+    .feature-item img {
+        min-height: 121px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -488,6 +525,25 @@ footer {
     }
     .feature-item:nth-child(8) {
         left: 18% !important;
+    }
+    .sba_gallery.row-1 .sba_gallery-items {
+        min-height: 239px;
+    }
+    .sba_gallery.row-2 .sba_gallery-items {
+        min-height: 157px;
+    }
+    .sba_au_container {
+        min-height: 237px;
+    }
+    .sba_au-manufacturer, .community_banner {
+        min-height: 288.4px;
+        top: 110% !important;
+    }
+    .ff_items {
+        min-height: 147.5px;
+    }
+    .feature-item img {
+        min-height: 125px;
     }
 }
 
