@@ -91,7 +91,8 @@ a.cant-find-vehicle:hover {
 .sg_carousel-link:active {
     outline: none;
     color: #222;
-    text-decoration: nonxe;
+    -webkit-text-decoration: none;
+            text-decoration: none;
 }
 .sg_carousel-link:hover {
     outline: none;
@@ -99,7 +100,8 @@ a.cant-find-vehicle:hover {
     text-decoration: none;
 }
 .sg_carousel-link:hover img {
-    filter: brightness(1.25);
+    -webkit-filter: brightness(1.25);
+            filter: brightness(1.25);
 }
 .slick-slide:not(.slick-active) {
     opacity: 0.4;
@@ -136,17 +138,23 @@ a.cant-find-vehicle:hover {
 }
 .sba_gallery.row-1,
 .sba_gallery.row-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .sba_gallery.row-1 .sba_gallery-items {
     width: 49.5%;
     min-height: 374px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
     background: linear-gradient(#fff, #e0e0e0);
 }
 .sba_gallery.row-2 .sba_gallery-items {
     width: 32.5%;
     min-height: 246px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
     background: linear-gradient(#fff, #e0e0e0);
 }
 .sba_gallery-items p {
@@ -166,6 +174,7 @@ a.cant-find-vehicle:hover {
 /* AU manufacturer */
 .sba_au-manufacturer {
     min-height: 450px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
     background: linear-gradient(#fff, #e0e0e0);
 }
 .am_details-info {
@@ -186,13 +195,19 @@ a.cant-find-vehicle:hover {
 .sba_about-us {
     margin-top: 130px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .sba_au_container {
     width: 49%;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     min-height: 370px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#808080), to(#353535));
     background: linear-gradient(#808080, #353535);
 }
 .sba_au_detais {
@@ -230,7 +245,8 @@ a.cant-find-vehicle:hover {
 .feature-item img {
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 50%;
     margin-bottom: 20px;
     min-height: 147px;
@@ -270,6 +286,7 @@ a.cant-find-vehicle:hover {
 .community_banner {
     margin-bottom: 150px;
     min-height: 450px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
     background: linear-gradient(#fff, #e0e0e0);
 }
 .community_more {
@@ -308,8 +325,12 @@ a.cant-find-vehicle:hover {
     color: #A9A9A9;
 }
 .ig_feeds-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .ig_feeds {
     background: #fff;
@@ -333,12 +354,17 @@ a.cant-find-vehicle:hover {
 /* ********************************* */
 
 .ff_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .ff_items {
     width: 32%;
     min-height: 231px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#808080), to(#353535));
     background: linear-gradient(#808080, #353535);
 }
 .ff_details {
@@ -350,7 +376,8 @@ a.cant-find-vehicle:hover {
     margin: 0 auto;
     float: left;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 .ff_info img {
     width: 20px;
@@ -393,8 +420,12 @@ a.cant-find-vehicle:hover {
     z-index: -1;
 }
 .cb_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .cb_logo {
     position: relative;
@@ -410,7 +441,8 @@ a.cant-find-vehicle:hover {
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 60%;
     padding: 0 10px;
 }
@@ -433,8 +465,12 @@ a.cant-find-vehicle:hover {
     font-size: 24px;
 }
 .email-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .email-container input {
     font-size: 18px;
@@ -444,7 +480,6 @@ a.cant-find-vehicle:hover {
     outline: none;
     border: none !important;
     -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
     box-shadow: none !important;
 }
 .sf_get-updates {
@@ -631,7 +666,8 @@ footer {
         width: 80%;
         position: relative;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     .sf_container {
         width: 100%;
@@ -641,7 +677,8 @@ footer {
         position: relative;
         width: 80%;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     .sf_container:first-child {
         margin-bottom: 25px;
@@ -679,6 +716,10 @@ footer {
     }
     .sba_am_details {
         top: 140%;
+    }
+    .sba_au-manufacturer,
+    .community_banner {
+        min-height: unset;
     }
     .sba_au-manufacturer {
         margin-bottom: 260px;
@@ -737,7 +778,8 @@ footer {
         position: relative;
         width: 80%;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     .cb_details p {
         font-size: 19px;
@@ -758,13 +800,15 @@ footer {
         width: 40%;
         top: 0;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     .cb_details {
         position: relative;
         top: 0;
         left: 0;
-        transform: unset;
+        -webkit-transform: unset;
+                transform: unset;
         float: left;
         width: 100%;
         text-align: center;
@@ -777,7 +821,8 @@ footer {
         font-size: 18px;
         width: 70%;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
     .email-container {
         display: block;
@@ -788,7 +833,8 @@ footer {
     }
     .sf_get-updates {
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
 }
 

@@ -8,7 +8,7 @@ $(function() { // On ready
     autoplaySpeed: 3000,
     responsive: [
         {
-        breakpoint: 1700,
+        breakpoint: 3000,
         settings: {
                 arrows: false,
                 centerMode: true,
