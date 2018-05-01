@@ -27,12 +27,11 @@
     font-size: 15px;
     outline: none;
     box-shadow: none;
-    border: 1px solid #ccc;
 }
 .header-search-icon {
     position: absolute;
     right: 10px;
-    top: 8px;
+    top: 10px;
     z-index: 999;
 }
 #triggerSearch {
@@ -53,11 +52,16 @@
     font-family: 'abrahamregular', Arial, sans-serif;
     letter-spacing: .8px;
 }
+.nav>li>a:focus, .nav>li>a:hover {
+    background: transparent;
+}
 /* Header Mid */
 .header-mid-menus {
     list-style-type: none;
-    width: 85%;
-    margin: auto;
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .header-mid-menus li {
     float: left;
@@ -284,6 +288,9 @@ a.cant-find-vehicle:hover {
     top: 10%;
 }
 .sba_am_details {
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 60%;
     padding: 30px 40px;
     top: 90%;
@@ -299,7 +306,7 @@ a.cant-find-vehicle:hover {
 }
 .am_details-info {
     font-size: 17px;
-    width: 70%;
+    width: 80%;
     margin: 30px auto 20px auto;
 }
 .am_details-read-more {
@@ -313,7 +320,8 @@ a.cant-find-vehicle:hover {
 
 /* About us */
 .sba_about-us {
-    margin-top: 130px;
+    position: relative;
+    bottom: 50px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -392,6 +400,9 @@ a.cant-find-vehicle:hover {
 /* ********************************* */
 
 .community_details {
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 60%;
     padding: 30px 40px;
     top: 90%;
@@ -400,22 +411,35 @@ a.cant-find-vehicle:hover {
 }
 .community_details-info {
     font-size: 17px;
-    width: 70%;
+    width: 80%;
     margin: 30px auto 20px auto;
 }
+.community_details-more p {
+    font-size: 17px;
+    width: 80%;
+    margin: 25px auto;
+}
+.community_details-more {
+    display: none;
+}
 .community_banner {
-    margin-bottom: 150px;
     min-height: 450px;
     background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
     background: linear-gradient(#fff, #e0e0e0);
 }
-.community_more {
+.community_more:link,
+.community_more:active,
+.community_more:visited {
     color: #aaa;
+    text-decoration: none;
 }
 .community_more:hover,
 .c_journal-more:hover {
-    text-decoration: none;
     color: #333;
+}
+.j-container {
+    position: relative;
+    bottom: 50px;
 }
 .c_journal-section {
     background: #e8e8e8;
@@ -646,7 +670,8 @@ footer {
         right: 14%;
     }
     .am_details-info,
-    .community_details-info {
+    .community_details-info,
+    .community_details-more p {
         width: 100%;
     }
     .feature-item {
@@ -724,23 +749,13 @@ footer {
     .hero_search-vehicle {
         width: 90%;
     }
-    .sba_am_details,
-    .community_details {
-        width: 80%;
-        top: 120%;
-    }
-    .sba_au-manufacturer {
-        margin-bottom: 220px;
-    }
     .community_banner {
         margin-top: 0;
         margin-bottom: 240px;
     }
-    .sba_about-us {
-        margin-top: 0;
-    }
     .am_details-info,
-    .community_details-info {
+    .community_details-info,
+    .community_details-more p {
         width: 100%;
     }
     .sba_au_detais {
@@ -763,6 +778,10 @@ footer {
     }
     .hero_header h2 {
         width: 70%;
+    }
+    .sba_am_details,
+    .community_details {
+        width: 90%;
     }
     .ig_feeds-container {
         position: relative;
@@ -929,7 +948,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .slick-prev {
         left: 5% !important;
     }
@@ -939,7 +958,12 @@ footer {
     .features_container .feature-item {
         width: 50%;
     }
-    .shop-by-activity-section {
+    .shop-by-activity-section,
+    .features-section,
+    .find-fit-section,
+    .confidence-builder-section,
+    .stay-fitted-section,
+    .community-section {
         padding: 50px 15px;
     }
     .sba_gallery {
@@ -952,24 +976,23 @@ footer {
         width: 100% !important;
         margin-bottom: 15px;
     }
+    .sba_gallery.row-1 .sba_gallery-items,
+    .sba_gallery.row-2 .sba_gallery-items {
+        min-height: unset;
+    }
     .sba_gallery-items p {
         font-size: 27px;
     }
-    .sba_am_details {
-        width: 90%;
-    }
-    .sba_am_details {
-        top: 140%;
-    }
     .sba_au-manufacturer,
     .community_banner {
+        margin-bottom: 0;
         min-height: unset;
     }
-    .sba_au-manufacturer {
-        margin-bottom: 260px;
-    }
-    .sba_about-us {
-        margin-top: 0;
+    .sba_am_details,
+    .community_details {
+        bottom: 30px;
+        margin-bottom: 50px;
+        padding: 30px 20px;
     }
     .sg_carousel-title {
         font-size: 25px;
@@ -979,11 +1002,13 @@ footer {
         font-size: 18px;
     }
     .sba_about-us {
+        bottom: 20px;
         display: block;
     }
     .sba_au_container {
         width: 100%;
         margin-bottom: 15px;
+        min-height: unset;
     }
     .sba_au_detais span {
         font-size: 19px;
@@ -1019,6 +1044,7 @@ footer {
     }
     .ff_items,
     .cb_items {
+        min-height: unset;
         position: relative;
         width: 80%;
         left: 50%;
@@ -1076,6 +1102,7 @@ footer {
         text-align: center;
     }
     .sf_get-updates {
+        width: 100%;
         left: 50%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);

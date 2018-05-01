@@ -54,6 +54,17 @@ $(function() { // On ready
         e.preventDefault();
     });
 
+    /* Read More - Collapsable section */
+    $('.community_more').on('click', function(e) {
+        if($(this).text() === 'Read more') {
+            $(this).text('Read less')
+        } else {
+            $(this).text('Read more');
+        }
+        $('.community_details-more').slideToggle(300);
+        e.preventDefault();
+    });
+
     /* Sidebar behavior */
     // Slide In
     $('.sidebar-actions a, .sidebar-items a').on('click', function(e) {
