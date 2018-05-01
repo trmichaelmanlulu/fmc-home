@@ -92,6 +92,7 @@ p, a, span {
 .pos-rt { position: relative; display: block; float: right; }
 .pos-rb { position: relative; display: block; }
 .pos-abs { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+.pos-fxd { position: fixed; }
 
 /* Remove styles */
 .no-pad { padding: 0 !important; }
