@@ -35,11 +35,120 @@
 <body>
     <!-- Header -->
     <header id="fmc-home-header" class="wrapper">
-        <div class="header-mid" class="pos-fl w-100 bg-white"></div>
+        <div class="header-top pos-fl w-100 bg-white">
+            <div class="header-top-items pos-fl w-33 h-100">
+                <a class="header-logo pos-fl center-vl" href="/au">
+                    <img src="https://d3v52uw9mwsoe.cloudfront.net/fitmycar/static-assets/images/fitmycar.images.fmc_img_logo.png" />
+                </a>
+            </div>
+            <div class="header-top-items pos-fl w-33 h-100">
+                <div class="header-search-container pos-fl w-100 center-vl">
+                    <input type="text" name="query" id="query" class="header-search w-100 query-suggest main-search-bar ui-autocomplete-input" placeholder="What car do you drive?" value="" autocomplete="off">
+                    <div class="header-search-icon">
+                        <svg id="triggerSearch" class="menu-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <title>Menu Search</title>
+                            <circle class="icon-search" cx="8.5" cy="8.5" r="7.5"/><line class="icon-search" x1="19" y1="19" x2="13.8" y2="13.8"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top-items pos-fl w-33 h-100">
+                <ul class="header-top-menus nav navbar-nav f-r">
+                    <li class="dropdown" id="dropdownGetHelp">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GET HELP <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li><a href="#">1300 299 922</a></li>
+                    <li class="dropdown" id="dropdownMyAccount">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MY ACCOUNT <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li><a href="#">CART <i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-mid pos-fl w-100 bg-white">
+            <ul class="header-mid-menus">
+                <li><a href="#">Car Mats</a></li>
+                <li><a href="#">Dash Mats</a></li>
+                <li><a href="#">Seat Covers</a></li>
+                <li><a href="#">Boot Mats</a></li>
+                <li><a href="#">Ute &amp; Van Mats</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">
+                <svg class="menu-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+                    <title>Find your fit</title>
+                    <path d="M91.65,46.65H84.31a34.55,34.55,0,0,0-31-31V8.35a3.35,3.35,0,1,0-6.7,0v7.34a34.55,34.55,0,0,0-31,31H8.35a3.35,3.35,0,1,0,0,6.7h7.34a34.55,34.55,0,0,0,31,31v7.34a3.35,3.35,0,0,0,6.7,0V84.31a34.55,34.55,0,0,0,31-31h7.34a3.35,3.35,0,0,0,0-6.7ZM53.35,77.56h-6.7A27.82,27.82,0,0,1,22.44,53.35v-6.7A27.82,27.82,0,0,1,46.65,22.44h6.7A27.82,27.82,0,0,1,77.56,46.65v6.7A27.82,27.82,0,0,1,53.35,77.56Z" transform="translate(-5 -5)"/><path d="M73.57,39.58H71.71a1.2,1.2,0,0,0-.48.14h0L69.09,41.1h0l-3.31-7.44a4.06,4.06,0,0,0-3.58-2.48l-9-.55c-1-.07-2-.07-3-.07s-2,0-3,.07l-8.95.55a4.08,4.08,0,0,0-3.59,2.48l-3.3,7.44h0l-2.14-1.38a.94.94,0,0,0-.48-.14H26.87a.8.8,0,0,0-.82.83v.34a.84.84,0,0,0,.27.62l2,1.66a3.79,3.79,0,0,1,.34.2h.42l1.44-.41h0l-.2.89a.15.15,0,0,1-.14.14l-2.55,3.31a1.35,1.35,0,0,0-.34.55,3.3,3.3,0,0,0-.35,1.86l1.45,14.81a.44.44,0,0,0,.41.41h4.06a.45.45,0,0,0,.42-.41V61.69a.81.81,0,0,1,.89-.83h0l10.2.49c1,.06,1.92.06,2.89.13,1.93.07,3.92.07,5.85,0,1,0,1.93-.07,2.89-.13l10.2-.49h0a.85.85,0,0,1,.89.83v2.69a.45.45,0,0,0,.42.41h4.06a.39.39,0,0,0,.41-.41l1.45-14.81a3.41,3.41,0,0,0-.35-1.86,1.91,1.91,0,0,0-.34-.55l-2.55-3.31c-.07-.07-.07-.14-.14-.14l-.2-.89h0l1.44.41h.42a.38.38,0,0,0,.34-.2l2-1.66a.72.72,0,0,0,.27-.62v-.34A.71.71,0,0,0,73.57,39.58ZM36.38,53.7a3,3,0,1,1,3-3A3.05,3.05,0,0,1,36.38,53.7ZM50.29,42.13H34.52a.87.87,0,0,1-.76-1.24l3.58-7.09a1,1,0,0,1,.69-.48l8.81-.49a60.91,60.91,0,0,1,6.89,0l8.75.49a.83.83,0,0,1,.69.48l3.65,7.09a.87.87,0,0,1-.76,1.24ZM64.2,53.7a3,3,0,1,1,3-3A3.06,3.06,0,0,1,64.2,53.7Z" transform="translate(-5 -5)"/>
+                </svg>
+                <label class="f-l marg-l-5 marg-t-0"> Fit Your Fit</label></a></li>
+                <li><a href="#">Shop by Activity</a></li>
+                <li><a href="#">Fitment Guides</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#"></a></li>
+            </ul> 
+        </div> 
         <div class="header-bottom pos-fl w-100 bg-dark-black">
             <p class="txt-center clr-light no-marg u-case">100% Fitment pledge | Free shipping on all AU orders</p>
         </div>
     </header>
+
+    <!-- Added to Cart Section -->
+    <section class="add-to-cart-section pos-abs w-100 bg-light-gray hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 clr-light">
+                    <h4>ADDED TO CART</h4>
+                </div>
+                <div class="col-md-5">
+                    Mark
+                </div>
+                <div class="col-md-3">
+                    <div class="prod-container">
+                        <div class="small-img-wrapper">
+                            <img src="https://cloudmall-webassets.s3-ap-southeast-2.amazonaws.com/fitmycar/images/product-images/13945/13945_1499999099473_first-aid-kit_small_img1_1000x1000px.jpg" />
+                        </div>
+                        <div class="f-l marg-t-15">
+                            <div>Executive</div>
+                            <a href="#">Edit</a>
+                        </div>
+                    </div>
+                    <div class="prod-container">
+                        <div class="small-img-wrapper">
+                            <img src="https://cloudmall-webassets.s3-ap-southeast-2.amazonaws.com/fitmycar/images/product-images/13946/13946_1499999147940_first-aid-kit_medium_img1_1000x1000px.jpg" />
+                        </div>
+                        <div class="f-l marg-t-15">
+                            <div>Carpet</div>
+                            <a href="#">Edit</a>
+                        </div>
+                    </div>
+                    <div class="prod-container">
+                        <div class="small-img-wrapper">
+                            <img src="https://cloudmall-webassets.s3-ap-southeast-2.amazonaws.com/fitmycar/images/product-images/13947/13947_1499999176472_first-aid-kit_large_img1_1000x1000px.jpg" />
+                        </div>
+                        <div class="f-l marg-t-15">
+                            <div>Bind</div>
+                            <a href="#">Edit</a>
+                        </div>
+                    </div>
+                    <div class="prod-container">
+                        <div class="small-img-wrapper">
+                            <img src="https://cloudmall-webassets.s3-ap-southeast-2.amazonaws.com/fitmycar/images/product-images/13968/13968_1500013809031_boot-organiser_img1_1000x1000px.jpg" />
+                        </div>
+                        <div class="f-l marg-t-15">
+                            <div>Stitch</div>
+                            <a href="#">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 side-border">
+                    <button type="button" name="addedToCartViewCart" id="addedToCartViewCart" class="btn-style continue-shopping marg-b-15">CONTINUE SHOPPING</button>
+                    <br />
+                    <button type="button" name="addedToCartViewCart" id="addedToCartViewCart" class="btn-style view-cart">VIEW CART (12)</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Sidebar Menu -->
     <div class="header-sidebar pos-fxd hidden-md hidden-lg slideIn">
@@ -172,7 +281,7 @@
     <main id="fmc-home-body" class="pos-fl w-100">
 
         <!-- Hero Section -->
-        <section class="hero-section pos-fl w-100 bg-dark-black">
+        <section class="hero-section pos-fl w-100 bg-gray">
             <!-- Video background -->
             <div class="hero_video-container pos-abs">
                 <video class="hero_video center-hr bg-dark-black" autoplay muted loop>
