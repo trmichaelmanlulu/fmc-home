@@ -124,6 +124,7 @@ p, a, span {
 .sec-pad-150 { padding: 150px 0; }
 
 /* Set common sizes paddings */
+.pad-10 { padding: 10px; }
 .pad-15 { padding: 15px; }
 .pad-25 { padding: 25px; }
 .pad-lr-15 { padding: 0 15px; }
