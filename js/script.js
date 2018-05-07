@@ -4,7 +4,6 @@ var Home = function() {
         init: function() {
             Home.shopGearCarousel();
             Home.mainMenu();
-            Home.collapsableSection();
             Home.materialInput();
             Home.collapsableSection();
         },
@@ -16,7 +15,6 @@ var Home = function() {
             slidesToShow: 3,
             centerPadding: '320px',
             autoplay: true,
-            autoplaySpeed: 3000,
             responsive: [
                 {
                 breakpoint: 3000,
