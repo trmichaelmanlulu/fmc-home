@@ -124,19 +124,33 @@ p, a, span {
 .sec-pad-150 { padding: 150px 0; }
 
 /* Set common sizes paddings */
+<<<<<<< Updated upstream
+=======
+.pad-5 { padding: 5px; }
+>>>>>>> Stashed changes
 .pad-10 { padding: 10px; }
 .pad-15 { padding: 15px; }
+.pad-20 { padding: 20px; }
 .pad-25 { padding: 25px; }
+
 .pad-lr-15 { padding: 0 15px; }
 .pad-lr-25 { padding: 0 25px; }
 .pad-tb-15 { padding: 15px 0; }
 .pad-tb-25 { padding: 25px 0; }
 
+.pad-r-0 { padding-right: 0; }
+.pad-r-5 { padding-right: 5px; }
 .pad-r-10 { padding-right: 10px; }
 .pad-r-15 { padding-right: 15px; }
+.pad-r-20 { padding-right: 20px; }
+.pad-r-25 { padding-right: 25px; }
 
+.pad-l-0 { padding-left: 0; }
+.pad-l-5 { padding-left: 5px; }
 .pad-l-10 { padding-left: 10px; }
 .pad-l-15 { padding-left: 15px; }
+.pad-l-20 { padding-left: 20px; }
+.pad-l-25 { padding-left: 25px; }
 
 /* Set common sizes margins */
 .marg-15 { margin: 15px; }
@@ -152,6 +166,7 @@ p, a, span {
 .marg-t-5 { margin-top: 5px; }
 .marg-t-10 { margin-top: 10px; }
 .marg-t-15 { margin-top: 15px; }
+.marg-t-20 { margin-top: 20px; }
 .marg-t-25 { margin-top: 25px; }
 .marg-t-50 { margin-top: 50px; }
 
@@ -159,6 +174,7 @@ p, a, span {
 .marg-b-5 { margin-bottom: 5px; }
 .marg-b-10 { margin-bottom: 10px; }
 .marg-b-15 { margin-bottom: 15px; }
+.marg-b-20 { margin-bottom: 20px; }
 .marg-b-25 { margin-bottom: 25px; }
 .marg-b-50 { margin-bottom: 50px; }
 
@@ -176,6 +192,9 @@ p, a, span {
 .center-hr { position: absolute; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); }
 .center-vl { position: absolute; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); }
 .center-both { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); }
+
+/* Set font size */
+.fnt-s-18 { font-size: 18px; }
 
 /* Set font weights */
 .fnt-w-300 { font-weight: 300; }
@@ -217,5 +236,5 @@ p, a, span {
 .tr-fade-fast { transition: all 0.1s ease-in-out; -webkit-transition: all 0.1s ease-in-out; }
 .tr-fade-slow { transition: all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; }
 
-
-
+/* Unordered List Styles */
+.list-style-none { list-style-type: none; }
