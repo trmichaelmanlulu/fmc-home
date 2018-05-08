@@ -124,10 +124,7 @@ p, a, span {
 .sec-pad-150 { padding: 150px 0; }
 
 /* Set common sizes paddings */
-<<<<<<< Updated upstream
-=======
 .pad-5 { padding: 5px; }
->>>>>>> Stashed changes
 .pad-10 { padding: 10px; }
 .pad-15 { padding: 15px; }
 .pad-20 { padding: 20px; }
@@ -153,9 +150,12 @@ p, a, span {
 .pad-l-25 { padding-left: 25px; }
 
 /* Set common sizes margins */
+.marg-0 { margin: 0; }
 .marg-15 { margin: 15px; }
 .marg-25 { margin: 25px; }
 .marg-l-5 { margin-left: 5px; }
+.marg-l-10 { margin-left: 10px; }
+.marg-l-15 { margin-left: 15px; }
 .marg-r-5 { margin-right: 5px; }
 .marg-lr-15 { margin: 0 15px; }
 .marg-lr-25 { margin: 0 25px; }
@@ -194,6 +194,7 @@ p, a, span {
 .center-both { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); }
 
 /* Set font size */
+.fnt-s-15 { font-size: 15px; }
 .fnt-s-18 { font-size: 18px; }
 
 /* Set font weights */

@@ -2,6 +2,7 @@ var Home = function() {
     return {
         /* Initialize function */
         init: function() {
+            Home.viewCartCarousel();
             Home.shopGearCarousel();
             Home.mainMenu();
             Home.materialInput();
@@ -64,9 +65,75 @@ var Home = function() {
             });
         },
 
+        /* View Cart carousel */
+        viewCartCarousel: function() {
+            // Slick carousel
+            $('.vc_carousel').slick({
+            slidesToShow: 1,
+            centerPadding: '320px',
+            autoplay: true,
+            autoplaySpeed: 3000,
+            responsive: [
+                {
+                breakpoint: 3000,
+                settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '230px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                breakpoint: 1350,
+                settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '180px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                breakpoint: 992,
+                    settings: {
+                        arrows: false,
+                        centerPadding: '0px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerPadding: '0px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+            });
+
+            // Carousel buttons
+            $('.vc_carousel-prev').on('click', function(e) {
+                $('.vc_carousel').slick('slickPrev');
+                e.preventDefault();
+            });
+            $('.vc_carousel-next').on('click', function(e) {
+                $('.vc_carousel').slick('slickNext');
+                e.preventDefault();
+            });
+        },
+
         /* Mobile and Tablet Menu behavior */
         mainMenu: function() {
             // Slide In
+            $('#fmc-home-header a').on('click', function(e) {
+                $('#fmc-home-header a').removeClass('active');
+                $(this).addClass('active');
+                $('.header-tabs-content').hide();
+                var currentTab = $(this).attr('data-tabs');
+                $(currentTab).show();
+                e.preventDefault();
+            });
+
             $('.sidebar-actions a:not(.sidebar-cart)').on('click', function(e) {
                 $('.sidebar-actions').removeClass('active');
                 $(this).parents('.sidebar-actions').addClass('active');
