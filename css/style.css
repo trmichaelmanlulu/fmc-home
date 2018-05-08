@@ -1246,6 +1246,35 @@ footer {
         margin: 0 0 5px 0;
         font-size: 17px;
     }
+    /* More */
+    .sidebar-more {
+        position: absolute;
+        height: 180vh;
+        padding: 0;
+    }
+    .sidebar-more .sidebar-contents-back {
+        margin-left: 25px;
+    }
+    .sidebar-more-items {
+        border-bottom: 1px solid #b5b5b5;
+    }
+    .sidebar-more-items a:link,
+    .sidebar-more-items a:visited,
+    .sidebar-more-items a:active {
+        color: #2e2925;
+        font-size: 19px;
+        text-transform: capitalize;
+        text-decoration: none;
+        transition: color 0.15s ease-in-out;
+        padding: 20px 0 20px 25px;
+    }
+    .sidebar-more-items a:hover {
+        color: #555;
+    }
+    .sidebar-more-items.top-more-menus a {
+        font-family: 'abrahamregular', 'Arial', sans-serif;
+        text-transform: uppercase;
+    }
 
 }
 
@@ -1365,6 +1394,10 @@ footer {
     .sidebar-help-items:nth-child(1), 
     .sidebar-help-items:nth-child(2) {
         min-height: 160px;
+    }
+    /* More */
+    .sidebar-more {
+        height: 250vh;
     }
    
 
